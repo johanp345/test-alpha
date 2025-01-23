@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Test Alpha - Taller CarTop Formulario</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div id="container-ppal" class="flex min-h-screen items-center">
+      <div class="container mx-auto z-10 px-2">
+        <div class="content-form mx-auto">
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              class="block mx-auto max-w-[200px]"
+              alt="CarTop"
+              id=""
+            />
+          </a>
+          <div class="form-wrap">
+            <form>
+              <div class="input-wrap">
+                <label for="clienteName"
+                  >Nombre del Cliente <sup class="text-red-600">*</sup></label
+                >
+                <input
+                  type="text"
+                  name="clienteName"
+                  id="clienteName"
+                  placeholder="Pedro Pérez"
+                />
+              </div>
+              <div class="input-wrap">
+                <label for="clienteEmail"
+                  >Correo del Cliente <sup class="text-red-600">*</sup></label
+                >
+                <input
+                  type="email"
+                  name="clienteEmail"
+                  id="clienteEmail"
+                  placeholder="Pedro@gmail.com"
+                />
+              </div>
+              <div class="input-wrap">
+                <label for="autoMarca"
+                  >Marca del Auto <sup class="text-red-600">*</sup></label
+                >
+                <select name="autoMarca" id="autoMarca">
+                  <option value="">Seleccione una marca</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Renault">Renault</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Saipa">Saipa</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <label for="autoTipo"
+                  >Tipo de auto <sup class="text-red-600">*</sup></label
+                >
+                <select name="autoTipo" id="autoTipo">
+                  <option value="">Seleccione un tipo</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="Deportivo">Deportivo</option>
+                  <option value="Pasajero">Pasajero</option>
+                  <option value="Carga pesada">Carga pesada</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <label for="descripcion"
+                  >Descripción del servicio requerido
+                  <sup class="text-red-600">*</sup></label
+                >
+                <textarea
+                  name="descripcion"
+                  id="descripcion"
+                  class="w-full h-[200px]"
+                  placeholder="Min 20 caracteres"
+                ></textarea>
+              </div>
+              <button type="button" id="myButton">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/form.js"></script>
+</html>

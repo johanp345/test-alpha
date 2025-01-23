@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Test Alpha - Taller CarTop</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div id="container-ppal" class="flex min-h-screen items-center px-2">
+      <div class="container mx-auto z-10">
+        <img
+          src="images/logo.png"
+          class="block mx-auto max-w-[300px] cursor-pointer"
+          alt="CarTop"
+          id="logo-img"
+        />
+        <div class="content-welcome mx-auto hidden" id="content-welcome">
+          <h1>Bienvenido al taller mas confiable y seguro para tu auto</h1>
+          <a
+            href="formulario.html"
+            class="button-link"
+            rel="noopener noreferrer"
+            >Comencemos</a
+          >
+        </div>
+        <div class="content-data mx-auto hidden" id="content-data">
+          <div class="wrap-content">
+            <h2>
+              Información para su servicio, nos comunicaremos con usted a la
+              brevedad posible.
+            </h2>
+            <p>Nombre del cliente: <span id="name"></span></p>
+            <p>Email del cliente: <span id="email"></span></p>
+            <p>Marca del auto: <span id="marca"></span></p>
+            <p>Tipo de auto: <span id="tipo"></span></p>
+            <p>Descripción de servicio: <span id="descripcion"></span></p>
+          </div>
+          <div class="flex justify-between gap-x-3">
+            <button id="go-ini">Volver al inicio</button>
+            <button id="go-form">Indicar otros datos</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center h-screen z-60 w-screen fixed left-0 top-0"
+        id="wrap-loading"
+      >
+        <div class="relative">
+          <div
+            class="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"
+          ></div>
+          <div
+            class="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-red-500 animate-spin"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>
